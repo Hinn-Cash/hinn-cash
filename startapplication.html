@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now - QuickLoan</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.1/dist/full.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-base-100 text-base-content font-sans">
+    <!-- Navbar -->
+    <div class="navbar bg-base-200 px-6 py-4 shadow-md sticky top-0 z-50">
+      <div class="flex-1">
+        <a class="text-3xl font-bold text-primary" href="bank.html">Hinn Cash</a>
+      </div>
+      <div class="hidden md:flex-none md:flex md:gap-4 items-center">
+        <a class="btn btn-ghost text-lg" href="bank.html">Home</a>
+        <a class="btn btn-ghost text-lg" href="loans.html">Loans</a>
+        <a class="btn btn-ghost text-lg" href="aboutus.html">About</a>
+        <a class="btn btn-ghost text-lg" href="contact.html">Contact</a>
+        <a class="btn btn-primary text-lg ml-4" href="startapplication.html">Apply Now</a>
+      </div>
+    </div>
+
+    <!-- Application Header -->
+    <section class="text-center py-16 px-6 bg-primary text-white">
+      <h1 class="text-5xl font-bold mb-4">Start Your Loan Application</h1>
+      <p class="text-lg">Fill out the form below to apply. Our process is fast, secure, and 100% online.</p>
+    </section>
+
+    <!-- Application Form -->
+    <section class="max-w-3xl mx-auto px-6 py-16">
+        <form 
+          action="https://formspree.io/f/xnnvnqkl" 
+          method="POST" 
+          class="space-y-6 bg-base-200 p-8 rounded-box shadow-lg"
+        >
+          <div class="form-control">
+            <label class="label font-semibold">Full Name</label>
+            <input name="fullName" type="text" placeholder="John Doe" class="input input-bordered w-full" required />
+          </div>
+      
+          <div class="form-control">
+            <label class="label font-semibold">Email Address</label>
+            <input name="email" type="email" placeholder="you@example.com" class="input input-bordered w-full" required />
+          </div>
+      
+          <div class="form-control">
+            <label class="label font-semibold">Phone Number</label>
+            <input name="phone" type="tel" placeholder="+1234567890" class="input input-bordered w-full" required />
+          </div>
+      
+          <div class="form-control">
+            <label class="label font-semibold">Loan Type</label>
+            <select name="loanType" class="select select-bordered w-full" required>
+              <option disabled selected>Select loan type</option>
+              <option>Personal Loan</option>
+              <option>Business Loan</option>
+              <option>Student Loan</option>
+            </select>
+          </div>
+      
+          <div class="form-control">
+            <label class="label font-semibold">Loan Amount</label>
+            <input name="loanAmount" type="number" placeholder="10000" class="input input-bordered w-full" required />
+          </div>
+      
+          <div class="form-control">
+            <label class="label font-semibold">Purpose of Loan</label>
+            <textarea name="purpose" class="textarea textarea-bordered w-full" placeholder="Explain how you will use the loan..." required></textarea>
+          </div>
+      
+          <!-- Optional: redirect to thank-you page -->
+          <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
+      
+          <div class="form-control mt-6">
+            <button type="submit" class="btn btn-primary btn-block text-lg">Submit Application</button>
+          </div>
+        </form>
+      </section>
+      
+
+    <!-- Footer -->
+    <footer class="footer p-10 bg-base-300 text-base-content mt-16">
+      <div>
+        <span class="footer-title">QuickLoan</span>
+        <p>Trusted by thousands since 2023</p>
+      </div>
+      <div>
+        <span class="footer-title">Services</span>
+        <a class="link link-hover">Personal Loans</a>
+        <a class="link link-hover">Business Loans</a>
+        <a class="link link-hover">Student Loans</a>
+      </div>
+      <div>
+        <span class="footer-title">Company</span>
+        <a class="link link-hover" href="about.html">About us</a>
+        <a class="link link-hover" href="contact.html">Contact</a>
+        <a class="link link-hover">Careers</a>
+      </div>
+      <div>
+        <span class="footer-title">Legal</span>
+        <a class="link link-hover">Terms of Service</a>
+        <a class="link link-hover">Privacy Policy</a>
+      </div>
+    </footer>
+  </body>
+</html>
